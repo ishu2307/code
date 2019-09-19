@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <script>
+       $(document).ready(function(){
+        $("#new").on("click",function(){
+            $("div").css("background","blue");
+        });
+        $("#new1").on("click",function(){
+        $("div").css("border-radius","20px");
+        
+    });
+    $("#new2").on("click",function(){
+        $("body").append('<div></div>');
+});
+       });
+    </script>
+<style>
+    div
+    {
+        border:5px solid black;
+        height:150px;
+        width:150px;
+        float:left;
+    }
+    #new
+    {
+        margin-top: 180px;
+        
+    }
+
+</style>
+</head>
+<body>
+
+    <div id="box1"></div>
+    <button id="new">Toggles colour</button>
+    <button id="new1">Toggles rounded border</button>
+    <button id="new2">add new box</button>
+
+
+    
+</body> 
+</html>
