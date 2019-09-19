@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#new").click(function(){
+            val=$("#add").val();
+            $("ol").append("<li>"+val+"</a></li>"); 
+        });
+    
+    });
+</script>
+</head>
+<body>
+    <input type="text" id="add">
+    <button id="new">click to add</button>
+    
+    <ol>
+        <li>ishu</li>
+        <li>kan</li>
+        <li>vel</li>
+    </ol>
+</body> 
+</html>
